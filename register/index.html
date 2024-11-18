@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Register Admin</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+
+     <!--Sweet Alert CSS-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css"/>
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin">
+  <form method="POST" id="register">
+    <img class="mb-4" src="assets/Logo.jpg" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Register Here</h1>
+
+    <div class="form-floating col-lg-12">
+      <input type="text" class="form-control" name="name"  id="name" placeholder="full Name">
+      <label for="name">Full Name</label>
+    </div>
+    <br>
+    <div class="form-floating col-lg-12">
+      <input type="email" class="form-control" name="email" id="email" placeholder="Password">
+      <label for="email">Email Address</label>
+    </div>
+    <br>
+    <div class="form-floating col-lg-12">
+        <input type="password" class="form-control" name="password"  id="email" placeholder="Password">
+        <label for="password">Password</label>
+      </div>
+      <br>
+      <div class="form-floating col-lg-12">
+        <input type="password" class="form-control" name="conpassword" id="conpassword" placeholder=" Confirm Password">
+        <label for="password">Confirm Password</label>
+      </div>
+
+    
+    <button class="w-100 btn btn-lg btn-primary" type="button" onclick="register()">Register</button>
+    <br><br>
+    <a href="../sign-in/"><button class="w-100 btn btn-lg btn-secondary" type="button">Sign in</button></a>
+    <p class="mt-5 mb-3 text-muted">&copy; AReL-2025</p>
+  </form>
+</main>
+
+
+    
+  <script src="jquery.js"></script>
+  <script src="register.js"></script>
+
+    <!--sweet Alert JS-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>  
+  </body>
+</html>
